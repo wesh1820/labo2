@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="nl">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./css/style.css">
+      <link rel="stylesheet" href="./css/normalize.css">
+      <title>Indiana Jones Invulformulier</title>
+   </head>
+   <body>
+      <nav>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="info.html">Info</a></li>
+            <li><a href="formpage.html">Form</a></li>
+         </ul>
+      </nav>
+      <h1>Indien u vragen hebt kan u deze altijd stellen door onderstaand formulier in te vullen.</h1>
+      <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+         <div class="row">
+            <label class="required" for="name">Jouw naam:</label><br />
+            <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+            <span id="name_validation" class="error_message"></span>
+         </div>
+         <div class="row">
+            <label class="required" for="email">Jouw email:</label><br />
+            <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+            <span id="email_validation" class="error_message"></span>
+         </div>
+         <div class="row">
+            <label class="required" for="message">Jouw bericht:</label><br />
+            <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+            <span id="message_validation" class="error_message"></span>
+         </div>
+         <input id="submit_button" type="submit" value="Verstuur mail" />
+      </form>
+      <footer>
+         <a href="#">
+            <img class="bovenknop" alt="Qries" src="./foto's/Unknown.png">
+         </a>
+        <p><strong>Indiana Jones Wiki made by <a href="https://www.weshworks.be">WESHWORKS</a></strong><br>
+      </footer>
+   </body>
+</html>
